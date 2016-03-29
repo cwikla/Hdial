@@ -1,0 +1,9 @@
+SYS_LIBRARIES= -lXm $(XTOOLLIB) $(XLIB) -lm
+
+SRCS= HdialT.c Hdial.c
+OBJS= HdialT.o Hdial.o
+PROGRAM= HdialT 
+
+ComplexProgramTarget(HdialT)
+
+depend:: HdialP.h Hdial.h 
